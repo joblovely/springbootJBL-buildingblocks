@@ -4,10 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Hellooooo wow from Lovely P Job generated javadoc for his code base.
- * Lovely P Job.
+ * Hellooooo wow from Lovely P Job generated javadoc for his code base. Lovely P
+ * Job.
  */
-
+//@Configuration
+//@EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
 @SpringBootApplication
 public class SpringbootJblBuildingblocksApplication {
 
