@@ -40,6 +40,26 @@ public class OrderController {
 		return userOptional.get().getOrders();
 	}
 
+	/*
+	 * // TBD for Assignment
+	 * 
+	 * @GetMapping("/{userId}/orders/{orderId}") public List<Order>
+	 * findAll(@PathVariable Long userId, @PathVariable Long orderId) throws
+	 * UserNotFoundException{ //your code }
+	 */
+
+//	@GetMapping("/{userId}/orders/{orderId}")
+//	public List<Order> findAll(@PathVariable Long userId, @PathVariable Long orderId) throws UserNotFoundException {
+//		Optional<User> existingUser = this.userRepository.findByIdAndUserId(id, id);
+//
+//		if (existingUser.isEmpty()) {
+//			throw new UserNotFoundException("User not found");
+//		}
+//
+//		return existingUser.get().getOrders();
+//
+//	}
+
 	// Create Order
 
 	@PostMapping("{userid}/orders")
