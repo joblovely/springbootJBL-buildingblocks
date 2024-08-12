@@ -60,13 +60,14 @@ public class UserService {
 			throw new UserNotFoundException("User Not found in user Repository, provide the correct user id");
 		}
 
-		user.setId(id);
+		user.setUserid(id);
+		;
 		return userRepository.save(user);
 
 	}
 
 	// deleteUserById
-	public void deleteUserById(Long id) {
+	public boolean deleteUserById(Long id) {
 		Optional<User> optionalUser = userRepository.findById(id);
 		if (!optionalUser.isPresent()) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
@@ -74,6 +75,7 @@ public class UserService {
 		}
 
 		userRepository.deleteById(id);
+		return true;
 	}
 
 	// getUserByUsername

@@ -18,12 +18,7 @@ import jakarta.validation.ConstraintViolationException;
 public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
 	// MethodArgumentNotValidException
-	// Note that in Java 17 @Override annotation gives error!. Works mostly only on
-	// Java 1.8.
-	// Also need to add annotation
-	// @ExceptionHandler(MethodArgumentNotValidException.class)
 	// @Override
-	// @ExceptionHandler(MethodArgumentNotValidException.class)
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatus status, WebRequest request) {
 
@@ -35,7 +30,6 @@ public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler
 
 	// HttpRequestMethodNotSupportedException
 	// @Override
-	// @ExceptionHandler(MethodArgumentNotValidException.class)
 	protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex,
 			HttpHeaders headers, HttpStatus status, WebRequest request) {
 

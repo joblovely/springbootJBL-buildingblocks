@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Hellooooo wow from Lovely P Job generated javadoc for his code base. Lovely P
+ * Hellooooo from Lovely P Job generated javadoc for his code base. Lovely P
  * Job.
  */
 //@Configuration
